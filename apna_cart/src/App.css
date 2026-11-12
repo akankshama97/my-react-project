@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+/* Apna Cart - Clean, Handcrafted UI Aesthetic */
+
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.apna-cart-app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Custom Navbar */
+.custom-navbar {
+  border-bottom: 2px solid #334155;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.brand-title {
+  font-size: 1.35rem;
+  letter-spacing: 0.3px;
+}
+
+/* Add Item Form Card */
+.add-item-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px;
+}
+
+.add-item-card input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.add-btn {
+  border-radius: 10px;
+  padding: 0.55rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+}
+
+/* Quick Add Chips */
+.quick-chip {
+  font-size: 0.82rem;
+  padding: 0.3rem 0.75rem;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  transition: all 0.15s ease;
+}
+
+.quick-chip:hover {
+  background-color: #e2e8f0;
+  border-color: #94a3b8;
+  color: #0f172a;
+  transform: translateY(-1px);
+}
+
+/* Delivery Tracker Card */
+.delivery-tracker-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px;
+}
+
+/* Cart Controls & Search Card */
+.cart-controls-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px;
+}
+
+/* Product Card */
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Quantity Button Group */
+.quantity-group .btn {
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.45rem 0.9rem;
+}
+
+.quantity-group .btn-warning.disabled {
+  opacity: 1;
+  background-color: #fef08a !important;
+  border-color: #fde047 !important;
+  color: #854d0e !important;
+  min-width: 45px;
+}
+
+/* Empty Cart State */
+.empty-cart-card {
+  background: #ffffff;
+  border: 2px dashed #cbd5e1 !important;
+  border-radius: 14px;
+}
+
+/* Fixed Bottom Footer */
+.footer-bar {
+  z-index: 1040;
+  border-top: 2px solid #334155;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.reset-btn {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.pay-btn {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+}
+
+.pay-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+/* Print Styles for Invoice Modal */
+@media print {
+  body * {
+    visibility: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  .modal.show,
+  .printable-area,
+  .printable-area * {
+    visibility: visible;
+  }
+  .printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px !important;
+  }
+  .modal-footer,
+  .btn-close,
+  .footer-bar,
+  .custom-navbar {
+    display: none !important;
   }
 }

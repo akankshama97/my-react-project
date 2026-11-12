@@ -1,8 +1,36 @@
-# react-project 
-Yeh mera ek React Project hai jisme maine component-based architecture ka use karke bnaya hai.
+# ⚛️ React Project
+A modern React Project built with **component-based architecture**. Clean UI, reusable components & React Hooks for state management.
 
-## Project Screenshots
-<img width="1920" height="1080" alt="Screenshot 2026-06-03 174041" src="https://github.com/user-attachments/assets/97a5fc9c-3c9b-452a-81ce-18ec4a685fc1" />
-Modern UI Component Design
-React Hooks (UseState, useEffect) 
-Clean aur organized folder structure.
+## 🔗 Live Demo
+https://my-react-project-tan-nine.vercel.app/
+
+## ✨ Features
+- 🧩 Component-Based Architecture - Reusable & clean components
+- 🎨 Modern UI Component Design
+- ⚡ React Hooks - `useState`, `useEffect`
+- 📁 Clean & Organized Folder Structure
+- 📱 Fully Responsive Layout
+
+## 🛠️ Tech Stack
+- **React.js** - UI Library
+- **JavaScript (ES6+)** - Logic
+- **CSS** - Styling
+- **Vite / Create React App** - Setup
+
+## 📁 Folder Structure
+src/
+├── components/
+├── App.jsx
+├── main.jsx
+└── App.cssjavascript
+## 🚀 How To Run
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/akankshama97/react-project.git
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the project
+npm run dev

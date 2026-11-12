@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Bootstrap is loaded via CDN in public/index.html
 import './App.css';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';

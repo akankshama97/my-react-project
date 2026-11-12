@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Bootstrap is imported via CSS @import in style.css
 import './style.css';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
